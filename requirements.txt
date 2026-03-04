@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+python-jose
+passlib[bcrypt]
+pytest
+sqlalchemy
+psycopg2-binary
+redis
+celery

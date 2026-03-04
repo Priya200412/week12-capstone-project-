@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: taskflow
+    ports:
+      - "5432:5432"
